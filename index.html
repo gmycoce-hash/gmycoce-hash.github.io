@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Personal Mail Notify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <p class="eyebrow">Personal notification utility</p>
+  <h1>Personal Mail Notify</h1>
+  <p class="lead">本人が許可したGoogleアカウントから、本人が指定した宛先へ通知メールを送る個人用アプリです。</p>
+  <section>
+    <h2>アプリの用途</h2>
+    <p>所有者が用意した通知内容をメールで届けるために使用します。所有者本人が管理・利用するアプリです。</p>
+    <p>このウェブサイトは、アプリの用途とデータの扱いを説明する静的ページです。このページ上では認証やメール送信の操作を行いません。</p>
+  </section>
+  <section>
+    <h2>Googleへのアクセスを求める理由</h2>
+    <dl>
+      <dt>Gmailからの送信（gmail.send）</dt>
+      <dd>所有者が認可した送信用Googleアカウントから、本人が指定した固定の宛先へ通知メールを送るためです。</dd>
+      <dt>送信元の確認（openid・userinfo.email）</dt>
+      <dd>認可したGoogleアカウントのメールアドレスを確認し、意図した送信元と一致するかを確かめるためです。</dd>
+    </dl>
+    <p>受信メールの読み取り・削除や、Googleドライブなど他サービスへのアクセスは求めません。Googleの認可画面は所有者自身が確認・操作します。</p>
+  </section>
+  <section>
+    <h2>データの扱い</h2>
+    <p>Googleの認可情報は所有者が管理する環境内に暗号化して保存し、アクセスを制限します。Googleとの通信にはHTTPSを使います。通知メールには送信目的に必要な情報だけを含め、認可情報は含めません。</p>
+    <p>本アプリによるGoogleユーザーデータの使用と転送は、Limited Use要件を含む<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>に従います。</p>
+    <p>詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+  </section>
+  <section>
+    <h2>連絡先・認可の解除</h2>
+    <p>個人利用のため、管理・問い合わせ先はGoogleの同意画面に表示されるユーザーサポートメールです。所有者は<a href="https://myaccount.google.com/connections">Googleアカウントの接続設定</a>から本アプリへのアクセスを取り消せます。</p>
+  </section>
+  <footer>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="terms.html">利用条件</a>
+    <p>更新日：2026年10月27日</p>
+  </footer>
+</main>
+</body>
+</html>
